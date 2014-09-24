@@ -1,6 +1,6 @@
 import javax.swing.JFrame;
 
-public class CarVieweer
+public class TargetViewer
 {
     public static void main(String[] args)
     

@@ -26,10 +26,29 @@ public class CityscapeComponent extends JComponent
     {
         Graphics2D g2 = (Graphics2D) g;
         
+        int x = getWidth();
+        int y = getHeight();
         // create instances of classes and invoke the draw method on each
         // ...
+        Building1 build1 = new Building1(x, y);
+        Building2 build2 = new Building2(x, y);
+        Building3 build3 = new Building3(x, y);
+        Building4 build4 = new Building4(x, y);
+        Car1 car1 = new Car1(x, y);
+        Car2 car2 = new Car2(x, y);
+        Road road = new Road(x, y);
+        Grass grass = new Grass(x, y);
+        Sky sky = new Sky(x, y);
         
-        
+        sky.draw(g2);
+        grass.draw(g2);
+        road.draw(g2);
+        build1.draw(g2);        
+        build2.draw(g2);
+        build3.draw(g2);
+        build4.draw(g2);
+        car1.draw(g2);
+        car2.draw(g2);
     }
 
 }

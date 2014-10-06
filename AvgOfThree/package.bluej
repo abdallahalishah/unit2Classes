@@ -1,10 +1,10 @@
 #BlueJ package file
 objectbench.height=100
-objectbench.width=355
+objectbench.width=660
 package.editor.height=400
 package.editor.width=562
-package.editor.x=479
-package.editor.y=179
+package.editor.x=57
+package.editor.y=225
 package.numDependencies=0
 package.numTargets=1
 package.showExtends=true
@@ -16,8 +16,8 @@ readme.editor.x=0
 readme.editor.y=22
 target1.editor.height=689
 target1.editor.width=900
-target1.editor.x=103
-target1.editor.y=219
+target1.editor.x=12
+target1.editor.y=288
 target1.height=50
 target1.name=AvgOfThree
 target1.naviview.expanded=false

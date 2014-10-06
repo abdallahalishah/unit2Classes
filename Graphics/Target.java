@@ -17,21 +17,21 @@ public class Target
     
     public void draw(Graphics2D g2)
     {
-//         Ellipse2D.Double c1 = new Ellipse2D.Double(this.x - 50, this.y - 50, 100, 100);
-//         Ellipse2D.Double c2 = new Ellipse2D.Double(this.x - 40, this.y - 40, 80, 80);
-//         Ellipse2D.Double c3 = new Ellipse2D.Double(this.x - 30, this.y - 30, 60, 60);
-//         Ellipse2D.Double c4 = new Ellipse2D.Double(this.x - 20, this.y - 20, 40, 40);
-//         Ellipse2D.Double c5 = new Ellipse2D.Double(this.x - 10, this.y - 10, 20, 20);
+        //Ellipse2D.Double c1 = new Ellipse2D.Double(this.x - 50, this.y - 50, 100, 100);
+        //         Ellipse2D.Double c2 = new Ellipse2D.Double(this.x - 40, this.y - 40, 80, 80);
+        //         Ellipse2D.Double c3 = new Ellipse2D.Double(this.x - 30, this.y - 30, 60, 60);
+        //         Ellipse2D.Double c4 = new Ellipse2D.Double(this.x - 20, this.y - 20, 40, 40);
+        //         Ellipse2D.Double c5 = new Ellipse2D.Double(this.x - 10, this.y - 10, 20, 20);
         
         Random gen = new Random();
         int num1 = gen.nextInt(500)+100;
         
         
-//         Ellipse2D.Double c1 = new Ellipse2D.Double(this.x , this.y , this.x, this.y);
-//         Ellipse2D.Double c2 = new Ellipse2D.Double(this.x, this.y , this.x-20, this.y-20);
-//         Ellipse2D.Double c3 = new Ellipse2D.Double(this.x , this.y , this.x-40, this.y-40);
-//         Ellipse2D.Double c4 = new Ellipse2D.Double(this.x , this.y , this.x-60, this.y-60);
-//         Ellipse2D.Double c5 = new Ellipse2D.Double(this.x , this.y , this.x-80, this.y-80);
+        //         Ellipse2D.Double c1 = new Ellipse2D.Double(this.x , this.y , this.x, this.y);
+        //         Ellipse2D.Double c2 = new Ellipse2D.Double(this.x, this.y , this.x-20, this.y-20);
+        //         Ellipse2D.Double c3 = new Ellipse2D.Double(this.x , this.y , this.x-40, this.y-40);
+        //         Ellipse2D.Double c4 = new Ellipse2D.Double(this.x , this.y , this.x-60, this.y-60);
+        //         Ellipse2D.Double c5 = new Ellipse2D.Double(this.x , this.y , this.x-80, this.y-80);
         int num2 = num1/2;        
         int num3 = num2/5;
         int num4 = num1/5;

@@ -3,7 +3,7 @@ import javax.swing.JFrame;
 /**
  * Class that contains the main method for the program and creates the frame containing the component.
  * 
- * @author @Abdallah Alishah
+ * @author Abdallah Alishah
  * @version 5 October 2014
  */
 public class CityscapeViewer
@@ -19,7 +19,7 @@ public class CityscapeViewer
         // create and configure the frame (window) for the program
         JFrame frame = new JFrame();
         int num = 0, runTotal = 0;
-        frame.setSize(1600 /* x */, 1000 /* y */);
+        frame.setSize(1560 /* x */, 1000 /* y */);
         frame.setTitle("Cityscape");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);

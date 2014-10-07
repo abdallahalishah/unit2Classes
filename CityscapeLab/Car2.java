@@ -7,6 +7,12 @@ import java.awt.geom.Point2D;
 import java.awt.Polygon;
 import java.util.Random;
 
+/**
+ * Class that creates a car heading left with varying colors.
+ * 
+ * @author Abdallah Alishah
+ * @version 5 October 2014
+ */
 public class Car2
 {
     /* gets the width of the frame */
@@ -18,8 +24,8 @@ public class Car2
     /**
      * Constructor for objects of class Car2
      * 
-     * @param   x   gets the x coordinate of main building part
-     * @param   y   gets the height of frame
+     * @param   x   the width of the frame
+     * @param   y   the height of frame
      */
     public Car2(int x, int y)
     {
@@ -32,7 +38,7 @@ public class Car2
      * 
      * @param   g2          variable from the Graphics2D class which is used to draw everything to the frame
      * @param   num         the x coordinate of where the car is drawn
-     * @param   numColor    the color to check what the car's color is
+     * @param   numColor    the number to check what the car's color is
      */
     public void draw(Graphics2D g2,int num, int numColor)
     {

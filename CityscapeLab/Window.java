@@ -5,24 +5,26 @@ import java.awt.Color;
 import java.util.Random;
 
 /**
- * Write a description of class Window1 here.
+ * Class that creates a window for buildings.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Abdallah Alishah
+ * @version 5 October 2014
  */
 public class Window
 {
-    // instance variables - replace the example below with your own
+    // the x coordinate, y coordinate, and size of the window
     private int xCoor,yCoor,size;
+    
+    // checks for day or
     private boolean dayNight;
 
     /**
      * Constructor for objects of class Window
      * 
-     * @param   x           gets the x coordinate of where the window is drawn
-     * @param   y           gets the y coordinate of where the window is drawn
-     * @param   dimensions  gets the dimension of what the height and width is
-     * @param   check       gets whether it is day or night
+     * @param   x           the x coordinate of where the window is drawn
+     * @param   y           the y coordinate of where the window is drawn
+     * @param   dimensions  the dimension of what the height and width is
+     * @param   check       whether it is day or night
      */
     public Window(int x,int y, int dimensions, boolean check)
     {
@@ -46,8 +48,8 @@ public class Window
         {
             int r=0,g=0,b=0;
             int num = gen.nextInt(3);
-            if (num<2){r=0;g=0;}
-            if (num==2){r=255;g=255;}
+            //if (num<2){r=0;g=0;}
+            //if (num==2){r=255;g=255;}
             Color color = new Color(r,g,b);
             g2.setColor(color);g2.fill(window);g2.draw(window);
         }
@@ -55,8 +57,8 @@ public class Window
         {
             int r=0,g=0,b=255;
             int num = gen.nextInt(2);
-            if (num==0){r=0;g=0;}
-            if (num==1){r=255;g=255;}
+            //if (num==0){r=0;g=0;}
+            //if (num==1){r=255;g=255;}
             Color color = new Color(r,g,b);
             g2.setColor(color);g2.fill(window);g2.draw(window);
         }

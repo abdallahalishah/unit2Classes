@@ -3,12 +3,11 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Toolkit;
 
-
 /**
- * Write a description of class Image here.
+ * Class that creates images and draws them to each building.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author Abdallah Alishah
+ * @version 5 October 2014
  */
 public class Images
 {
@@ -55,7 +54,7 @@ public class Images
         Image img10 = Toolkit.getDefaultToolkit().getImage("ver.png");
         Image img11 = Toolkit.getDefaultToolkit().getImage("reebok.png");
         
-        g2.drawImage(img1, this.width-130, this.height-290, null);
+        g2.drawImage(img1, this.width-160, this.height-413, null);
         if (dayNight==true){g2.drawImage(img2, this.width-120, -120, null);}
         if (dayNight==false){g2.drawImage(img3, this.width-175, -175, null);}
         g2.drawImage(img4, 80, this.height-250, null);

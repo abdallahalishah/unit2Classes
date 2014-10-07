@@ -4,12 +4,30 @@ import java.awt.Color;
 import java.util.Random;
 import java.awt.GradientPaint;
 
+/**
+ * Class that creates a sky and stars.
+ * 
+ * @author Abdallah Alishah
+ * @version 5 October 2014
+ */
 public class Sky
 {
+    // the width of the frame
     private int width;
-    private int height;
-    private boolean dayNight=false;
     
+    // the height of the frame
+    private int height;
+    
+    // boolean for day or night 
+    private boolean dayNight;
+    
+    /**
+     * Constructor for objects of Sky
+     * 
+     * @param   x       gets the width of frame
+     * @param   y       gets the height of frame
+     * @param   check   boolean for whether it is day or night
+     */
     public Sky(int x, int y, boolean check)
     {
         this.height = y;
@@ -17,7 +35,12 @@ public class Sky
         this.dayNight = check;
     }
 
-    
+    /**
+     * Method to create and draw everything for every instance created from this class
+     * 
+     * @param   g2      variable from the Graphics2D class which is used to draw everything to the frame
+     * 
+     */
     public void draw(Graphics2D g2)
     {
         /* creates the sky object */

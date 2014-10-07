@@ -4,6 +4,12 @@ import java.awt.geom.Ellipse2D;
 import java.awt.Color;
 import java.util.Random;
 
+/**
+ * Class that creates a road.
+ * 
+ * @author Abdallah Alishah
+ * @version 5 October 2014
+ */
 public class Road
 {
     // the width of the frame

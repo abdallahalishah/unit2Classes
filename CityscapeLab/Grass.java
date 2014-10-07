@@ -3,6 +3,12 @@ import java.awt.Rectangle;
 import java.awt.Color;
 import java.awt.GradientPaint;
 
+/**
+ * Class that creates grass.
+ * 
+ * @author Abdallah Alishah
+ * @version 5 October 2014
+ */
 public class Grass
 {
     // gets the width of the frame
@@ -15,10 +21,10 @@ public class Grass
     private boolean dayNight;
     
     /**
-     * Constructor for objects of class Building3
+     * Constructor for objects of class Grass
      * 
-     * @param   x   gets the x coordinate of main building part
-     * @param   y   gets the height of frame
+     * @param   x   the width of frame
+     * @param   y   the height of frame
      * @param   check   gets whether it is day or night
      */
     public Grass(int x, int y, boolean check)

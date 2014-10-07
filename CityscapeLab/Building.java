@@ -4,15 +4,15 @@ import java.awt.geom.Ellipse2D;
 import java.awt.Color;
 
 /**
- * Class that creates a building to be drawn on a frame with a specified height and x coordinate.
+ * Class that creates a building with certain specifications.
  * 
- * @author @Abdallah Alishah
+ * @author Abdallah Alishah
  * @version 5 October 2014
  */
-public class Building8
+public class Building
 {
-    // the x coordinate for where the building is being placed
-    private int width;
+    // the x and y coordinate for where the building is being placed
+    private int xPlace,yPlace;
     
     // the height of the frame
     private int height;
@@ -20,21 +20,47 @@ public class Building8
     // checks if it is day or night
     private boolean dayNight;
     
+    // the height of the building
+    private int buildH;
+    
+    // 1st 3 are daytime r,g,b values and the last 3 are for the night
+    private int rD,gD,bD,rN,gN,bN;
+    
+    // number of windows 
+    private int winNum;
+    
     /**
-     * Constructor for objects of class Building8
+     * Constructor for objects of class Building2
      * 
-     * @param   x   gets the x coordinate of main building part
-     * @param   y   gets the height of frame
-     * @param   check   gets whether it is day or night
+     * @param   x           the x coordinate of main building part
+     * @param   y           the height of frame
+     * @param   yPlace      the y coordinate of main building part
+     * @param   mainH       the main building height
+     * @param   rN          the r value from (r,g,b) during the night
+     * @param   gN          the g value from (r,g,b) during the night
+     * @param   bN          the b value from (r,g,b) during the night
+     * @param   rD          the r value from (r,g,b) during the day
+     * @param   gD          the g value from (r,g,b) during the day
+     * @param   bD          the b value from (r,g,b) during the day
+     * @param   check       whether it is day or night
      */
-    public Building8(int x, int y, boolean check)
+    public Building(int x, int h, int yPlace, int mainH, int rN, int gN,
+    int bN, int rD, int gD, int bD, boolean check, int win)
     {
-        this.height = y;
-        this.width = x;
+        this.height = h;
+        this.xPlace = x;
         this.dayNight = check;
+        this.yPlace = yPlace;
+        this.buildH = mainH;
+        this.rD = rD;
+        this.rN = rN;
+        this.gD = gD;
+        this.gN = gN;
+        this.bD = bD;
+        this.bN = bN;
+        this.winNum = win;
     }
 
-    
     /**
      * Method to create and draw everything for every instance created from this class
      * 
@@ -44,8 +70,8 @@ public class Building8
     public void draw(Graphics2D g2)
     {
         /* creates the outline and main building object */
-        Rectangle back1 = new Rectangle(this.width, this.height-600, 152, 400);
-        Rectangle main1 = new Rectangle((int)(back1.getX())+ 2,this.height-598, 148, 396);
+        Rectangle back1 = new Rectangle(this.xPlace, this.yPlace, 152, this.buildH+4);
+        Rectangle main1 = new Rectangle((int)(back1.getX())+ 2,this.yPlace+2, 148, this.buildH);
         
         /* creates variables to make it easier to access parts of the main building*/
         int main1X = (int)(main1.getX());
@@ -74,13 +100,13 @@ public class Building8
         g2.setColor(Color.BLACK);g2.fill(back1);g2.draw(back1);
         if (dayNight==true)
         {
-            Color gray = new Color(15,25,15);
+            Color gray = new Color(this.rN,this.gN,this.bN);
             g2.setColor(gray);g2.fill(main1);g2.draw(main1);
         }
         
         if (dayNight==false)
         {
-            Color gray = new Color(45,65,55);
+            Color gray = new Color(this.rD,this.gD,this.bD);
             g2.setColor(gray);g2.fill(main1);g2.draw(main1);
         }
         
@@ -89,9 +115,9 @@ public class Building8
         g2.setColor(Color.BLACK);g2.fill(doorBack);g2.draw(doorBack);
         g2.setColor(doorGray);g2.fill(door);g2.draw(door);
         g2.setColor(Color.BLACK);g2.fill(knob);g2.draw(knob);
-     
+        
         /* uses a loop to specify amount of windows created using the window class */
-        for (int i=0;i<44;i++)
+        for (int i=0;i<this.winNum;i++)
         {
             count += 1;
             if (count==1){xCoor=win1X;}

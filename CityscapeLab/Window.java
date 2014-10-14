@@ -48,8 +48,8 @@ public class Window
         {
             int r=0,g=0,b=0;
             int num = gen.nextInt(3);
-            //if (num<2){r=0;g=0;}
-            //if (num==2){r=255;g=255;}
+            if (num<2){r=0;g=0;}
+            if (num==2){r=255;g=255;}
             Color color = new Color(r,g,b);
             g2.setColor(color);g2.fill(window);g2.draw(window);
         }
@@ -57,8 +57,8 @@ public class Window
         {
             int r=0,g=0,b=255;
             int num = gen.nextInt(2);
-            //if (num==0){r=0;g=0;}
-            //if (num==1){r=255;g=255;}
+            if (num==0){r=0;g=0;}
+            if (num==1){r=255;g=255;}
             Color color = new Color(r,g,b);
             g2.setColor(color);g2.fill(window);g2.draw(window);
         }
